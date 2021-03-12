@@ -2,10 +2,14 @@
 MATLAB Package V1.0 [1]**
 
 The additional material in this file is provided by the authors to supplement
-the paper in [1]. The PW-WVD MATLAB package can be obtained using the permanent
-GitHub link in [2] or from the paper media section. The MATLAB scripts,
-functions, and datasets listed below, supplied within the PW-WVD MATLAB package,
-are used to produce results, and supporting figures illustrated in the paper:
+the following paper:
+
+M. Al-Sa'd, B. Boashash, and M. Gabbouj, “Design of an Optimal Piece-Wise Spline
+Wigner-Ville Distribution for TFD Performance Evaluation and Comparison”, *IEEE
+Transactions on Signal Processing*, 2021.
+
+The MATLAB scripts, functions, and datasets listed in this repository are used
+to produce results, and supporting figures illustrated in the paper:
 
 **Demo Scripts:**
 
