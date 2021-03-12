@@ -1,7 +1,6 @@
 # The Piece-Wise Spline Wigner-Ville Distribution (PW-WVD) MATLAB Package V1.0 [1]
 
-The additional material in this file is provided by the authors to supplement
-the following paper:
+The material in this repository is provided to supplement the following paper:
 
 M. Al-Sa'd, B. Boashash, and M. Gabbouj, “Design of an Optimal Piece-Wise Spline
 Wigner-Ville Distribution for TFD Performance Evaluation and Comparison”, *IEEE
@@ -181,7 +180,7 @@ are in specific folders within *Functions* directory:
 -   *adatnirperformance.m*: It is the Reinhold measure implementation by Dr
     Isabella Reinhold in ‎[3].
 
--   *tfd\_measure.p*: This is a protected MATLAB function that computes the NIR
+-   *tfd_measure.p*: This is a protected MATLAB function that computes the NIR
     measure. It is obtained from the TFSAP toolbox in ‎[4].
 
 -   *tfd_accuracy.m*: It computes the proposed TFD accuracy measure.
