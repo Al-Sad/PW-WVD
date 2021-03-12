@@ -8,34 +8,82 @@ Wigner-Ville Distribution for TFD Performance Evaluation and Comparison”, *IEE
 Transactions on Signal Processing*, 2021.
 
 The MATLAB scripts, functions, and datasets listed in this repository are used
-to produce results, and supporting figures illustrated in the paper. A detailed
-description for the MATLAB package can be found in Readme.pdf.
+to produce results, and supporting figures illustrated in the paper.
 
 ## Demo Scripts:
 
 The developed PW-WVD package contains the following demo scripts within its main
 directory:
 
-1.  *Demo_1_example_simulation.m*: This demo script produces the results that
-    are depicted in Fig. 2 of the paper.
+### Demo_1_example_simulation.m
 
-2.  *Demo_2_tfd_comparison.m*: This demo script produces the results that are
-    depicted in Fig. 3 of the paper.
+-   Description: This demo script produces the results that are depicted in Fig.
+    2 of the paper.
 
-3.  *Demo_3_resolution_visualization.m*: This demo script produces the
-    illustration in Fig. 4 of the paper.
+-   Process: It generates an example 2-component non-stationary signal and
+    computes its PW-WVD, WVD, and the WVD cross-terms. In addition, it shows the
+    signal IA, IF, and time-support functions.
 
-4.  *Demo_4_measure_comparison.m:* This demo script produces the results that
-    are depicted in Figs. 5 and 6 of the paper.
+### Demo_2_tfd_comparison.m
 
-5.  \*Demo_5_performance\_results.\*m: This demo script produces the results
-    that are depicted in Fig. 7 and Table I of the paper.
+-   Description: This demo script produces the results that are depicted in Fig.
+    3 of the paper.
 
-6.  *Demo_6_computational_complexity.m*: This demo script produces the results
-    that are depicted in Fig. 8 of the paper.
+-   Process: It generates an example 2-component non-stationary signal and
+    computes the signal ideal TFD, PW-WVD, and the MPD using chirplet atoms.
+    Note that the MPD is precomputed and saved in *MPD_example.mat*.
 
-7.  *Demo_7_inner_terms.m*: This demo script produces the results that are
-    depicted in Fig. A.1 of the paper.
+### Demo_3_resolution_visualization.m
+
+-   Description: This demo script produces the illustration in Fig. 4 of the
+    paper.
+
+-   Process: It yields a one-dimensional visual interpretation for the proposed
+    TFD resolution measure.
+
+### Demo_4_measure_comparison.m
+
+-   Description: This demo script produces the results that are depicted in
+    Figs. 5 and 6 of the paper.
+
+-   Process: It compares the proposed average TFD performance with the NIR and
+    Reinhold measures using the CKD of the example signal generated in
+    *Demo_2_tfd_comparison.m*. In addition, it illustrates the TFD performance
+    progression by computing the CKD at four increasing performance levels. Note
+    that the CKD optimization is precomputed.
+
+### Demo_5_performance_results.m
+
+-   Description: This demo script produces the results that are depicted in Fig.
+    7 and Table I of the paper.
+
+-   Process: It yields the TFD performance evaluation results using the proposed
+    measures. It uses the database signal parameters saved in
+    *pw_wvd_database.mat* and the 12 TFD evaluations saved in *perf_pwvd.mat*,
+    *perf_spwvd.mat*, *perf_ed.mat*, *perf_bjd.mat*, *perf_bd.mat*,
+    *perf_mbd.mat*, *perf_embd.mat*, *perf_ckd.mat*, *perf_rgd.mat*,
+    *perf_mdd.mat*, *perf_dgf.mat*, and *perf_mpd.mat*.
+
+### Demo_6_computational_complexity.m
+
+-   Description: This demo script produces the results that are depicted in Fig.
+    8 of the paper.
+
+-   Process: It produces the TFD computational complexity measured in terms of
+    averaged processing time. It uses the 12 TFD computational complexity
+    evaluations saved in *comtime_pwvd.mat*, *comtime_spwvd.mat*,
+    *comtime_ed.mat*, *comtime_bjd.mat*, *comtime_bd.mat*, *comtime_mbd.mat*,
+    *comtime_embd.mat*, *comtime_ckd.mat*, *comtime_rgd.mat*, *comtime_mdd.mat*,
+    *comtime_dgf.mat*, and *comtime_mpd.mat*.
+
+### Demo_7_inner_terms.m
+
+-   Description: This demo script produces the results that are depicted in Fig.
+    A.1 of the paper.
+
+-   Process: It generates an example mono-component non-stationary signal with
+    non-linear IF and computes the WVD auto-terms and inner-terms using the
+    formulation in Appendix A.
 
 ## Main Scripts:
 
