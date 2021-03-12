@@ -29,7 +29,7 @@ directory:
 4.  *Demo_4_measure_comparison.m:* This demo script produces the results that
     are depicted in Figs. 5 and 6 of the paper.
 
-5.  \*Demo_5_performance\_results.\*m: This demo script produces the results
+5.  *Demo_5_performance\_results.*m: This demo script produces the results
     that are depicted in Fig. 7 and Table I of the paper.
 
 6.  *Demo_6_computational_complexity.m*: This demo script produces the results
