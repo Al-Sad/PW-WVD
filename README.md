@@ -1,5 +1,4 @@
-**The Piece-Wise Spline Wigner-Ville Distribution (PW-WVD) MATLAB Package V1.0
-[1]**
+# The Piece-Wise Spline Wigner-Ville Distribution (PW-WVD) MATLAB Package V1.0 [1]
 
 The additional material in this file is provided by the authors to supplement
 the following paper:
@@ -12,7 +11,7 @@ The MATLAB scripts, functions, and datasets listed in this repository are used
 to produce results, and supporting figures illustrated in the paper. A detailed
 description for the MATLAB package can be found in Readme.pdf.
 
-**Demo Scripts:**
+## Demo Scripts:
 
 The developed PW-WVD package contains the following demo scripts within its main
 directory:
@@ -29,7 +28,7 @@ directory:
 4.  *Demo_4_measure_comparison.m:* This demo script produces the results that
     are depicted in Figs. 5 and 6 of the paper.
 
-5.  *Demo_5_performance_results.m*: This demo script produces the results
+5.  \*Demo_5_performance\_results.\*m: This demo script produces the results
     that are depicted in Fig. 7 and Table I of the paper.
 
 6.  *Demo_6_computational_complexity.m*: This demo script produces the results
@@ -38,7 +37,7 @@ directory:
 7.  *Demo_7_inner_terms.m*: This demo script produces the results that are
     depicted in Fig. A.1 of the paper.
 
-**Main Scripts:**
+## Main Scripts:
 
 The developed PW-WVD package contains the following main scripts within its main
 directory:
@@ -59,7 +58,7 @@ directory:
 5.  *Main_5_computational_time.m*: This main script evaluates the computational
     complexity of each optimized TFD in terms of processing time.
 
-**Functions:**
+## Functions:
 
 The developed PW-WVD package is comprised of the following MATLAB functions that
 are in specific folders within *Functions* directory:
@@ -158,7 +157,7 @@ are in specific folders within *Functions* directory:
     Fig in [https://mathworks.com/  
     matlabcentral/fileexchange/24325-combinator-combinations-and-permutations](https://mathworks.com/matlabcentral/fileexchange/24325-combinator-combinations-and-permutations).
 
-**Datasets:**
+## Datasets:
 
 The developed PW-WVD package is comprised of the following datasets that are in
 specific folders within *Data* directory:
@@ -193,7 +192,7 @@ specific folders within *Data* directory:
     *comtime_mbd.mat*, *comtime_embd.mat*, *comtime_ckd.mat*, *comtime_rgd.mat*,
     *comtime_mdd.mat*, *comtime_dgf.mat*, and *comtime_mpd.mat*.
 
-**References**
+## References
 
 1.  M. Al-Sa'd, B. Boashash, and M. Gabbouj, “Design of an Optimal Piece-Wise
     Spline Wigner-Ville Distribution for TFD Performance Evaluation and
