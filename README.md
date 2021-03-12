@@ -134,7 +134,7 @@ directory:
     *perf_mbd.mat*, *perf_embd.mat*, *perf_ckd.mat*, *perf_rgd.mat*,
     *perf_mdd.mat*, *perf_dgf.mat*, and *perf_mpd.mat*.
 
-### Main_5_computational_time.m
+### Main\_5_computational_time.m
 
 -   Description: This main script evaluates the computational complexity of each
     optimized TFD in terms of processing time.
@@ -312,11 +312,13 @@ files are as follows: *comtime_pwvd.mat*, *comtime_spwvd.mat*, *comtime_ed.mat*,
 2.  Reinhold, Isabella, and Maria Sandsten. "Optimal time–frequency
     distributions using a novel signal adaptive method for automatic component
     detection." *Signal Processing* 133 (2017): 250-259.
+    <https://www.sciencedirect.com/science/article/pii/S0165168416303425>
 
 3.  Boualem Boashash, and Samir Ouelha. "Efficient software platform TFSAP 7.1
     and MATLAB package to compute time–frequency distributions and related
     time-scale methods with extraction of signal characteristics." *SoftwareX* 8
     (2018): 48-52.
+    <https://www.sciencedirect.com/science/article/pii/S2352711017300353>
 
 4.  Boualem Boashash, Time-frequency signal analysis and processing toolbox,
     Online (2016). URL:
@@ -327,3 +329,4 @@ files are as follows: *comtime_pwvd.mat*, *comtime_spwvd.mat*, *comtime_ed.mat*,
     classification of non-stationary signals: a tutorial review with a
     comparison of features performance." *Digital Signal Processing* 77 (2018):
     120-152.
+    <https://www.sciencedirect.com/science/article/pii/S1051200417301653>
