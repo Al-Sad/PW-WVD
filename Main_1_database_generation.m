@@ -75,4 +75,4 @@ for k = 1:K
 end
 
 %% Saving
-save('Data/Database/pw_wvd_database.mat','z','IF','IP','IA','Wp','PR','S','fs','N','K');
+save(['Data' filesep 'Database' filesep 'pw_wvd_database.mat'],'z','IF','IP','IA','Wp','PR','S','fs','N','K');

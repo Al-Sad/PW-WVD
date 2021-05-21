@@ -75,9 +75,9 @@ Lz = pw_wvd(IF,IP,IA,W,fs);
 % dict = chirplet_dictionary(N,fs);
 % [atoms,c,idx] = mp_atoms(z,dict,1);
 % Mz = mpd(atoms);
-% save('Data/MP/MPD_example.mat','Mz');
-% save('Data/MP/MP_example.mat','c','idx');
-load('Data/MP/MPD_example.mat');
+% save(['Data' filesep 'MP' filesep 'MPD_example.mat'],'Mz');
+% save(['Data' filesep 'MP' filesep 'MP_example.mat'],'c','idx');
+load(['Data' filesep 'MP' filesep 'MPD_example.mat']);
 
 %% Ideal TFD TF-Tiling
 ideal_t_tiling = repmat(t,N,1);
@@ -95,7 +95,7 @@ for p = 1:P
 end
 
 %% MPD TF-Tiling
-load('Data/MP/MP_example.mat');
+load(['Data' filesep 'MP' filesep 'MP_example.mat']);
 parameters = chirplet_parameters(N,fs);
 mp_param = parameters(:,idx);
 index = [1 4 8];

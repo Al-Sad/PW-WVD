@@ -46,7 +46,7 @@ Tm = zeros(1,length(tfd));
 Ts = zeros(1,length(tfd));
 for i = 1:length(tfd)
     idx = tfd{i};
-    load(['Data/Computation time/comtime_' idx '.mat']);
+    load(['Data' filesep 'Computation time' filesep 'comtime_' idx '.mat']);
     Tm(i) = mean(T(:));
     Ts(i) = std(T(:));
 end

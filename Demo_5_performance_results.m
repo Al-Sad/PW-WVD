@@ -41,7 +41,7 @@ clear; close all; clc;
 addpath(genpath('Functions'));
 
 %% Loading database information
-load('Data/Database/pw_wvd_database.mat','S','PR','K');
+load(['Data' filesep 'Database' filesep 'pw_wvd_database.mat'],'S','PR','K');
 
 %% Main
 tfd = {'pwvd','spwvd','ed','bjd','bd','mbd','embd','ckd','rgd','mdd','dgf','mpd'};
@@ -50,7 +50,7 @@ Perf_r = zeros(K,length(tfd));
 Perf_m = zeros(K,length(tfd));
 for i = 1:length(tfd)
     idx = tfd{i};
-    load(['Data/Evaluation/perf_' idx '.mat']);
+    load(['Data' filesep 'Evaluation' filesep 'perf_' idx '.mat']);
     Perf_a(:,i) = Pa;
     Perf_r(:,i) = Pr;
     Perf_m(:,i) = (Pa + Pr)./2;
