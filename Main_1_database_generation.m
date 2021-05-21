@@ -25,7 +25,7 @@
 % Spline Wigner-Ville Distribution for TFD Performance Evaluation and
 % Comparison", IEEE Transactions on Signal Processing, 2021.
 %
-% Last Modification: 12-March-2021
+% Last Modification: 21-May-2021
 %
 % Description:
 % This main script generates the database signals and parameters and saves
@@ -75,4 +75,4 @@ for k = 1:K
 end
 
 %% Saving
-save('Data\Database\pw_wvd_database.mat','z','IF','IP','IA','Wp','PR','S','fs','N','K');
+save('Data/Database/pw_wvd_database.mat','z','IF','IP','IA','Wp','PR','S','fs','N','K');

@@ -25,7 +25,7 @@
 % Spline Wigner-Ville Distribution for TFD Performance Evaluation and
 % Comparison", IEEE Transactions on Signal Processing, 2021.
 %
-% Last Modification: 12-March-2021
+% Last Modification: 21-May-2021
 %
 % Description:
 % This main script evaluates the computational complexity of each optimized
@@ -43,7 +43,7 @@ clear; close all; clc;
 addpath(genpath('Functions'));
 
 %% Loading database
-load('Data\Database\pw_wvd_database.mat','z','N','fs','K');
+load('Data/Database/pw_wvd_database.mat','z','N','fs','K');
 
 %% Main
 L = 10; % Number of repetitions
@@ -52,7 +52,7 @@ for i = 1:length(tfd)
     idx = tfd{i};
     fprintf('%s \n',idx);
     if(~strcmp(idx,'mpd'))
-        load(['Data\Optimization\opt_' idx '.mat']);
+        load(['Data/Optimization/opt_' idx '.mat']);
     else
         dict = chirplet_dictionary(N,fs);
     end
@@ -177,5 +177,5 @@ for i = 1:length(tfd)
                 end
             end
     end
-    save(['Data\Computation time\comtime_' idx '.mat'],'T');
+    save(['Data/Computation time/comtime_' idx '.mat'],'T');
 end

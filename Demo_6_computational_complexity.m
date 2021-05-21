@@ -25,7 +25,7 @@
 % Spline Wigner-Ville Distribution for TFD Performance Evaluation and
 % Comparison", IEEE Transactions on Signal Processing, 2021.
 %
-% Last Modification: 12-March-2021
+% Last Modification: 21-May-2021
 %
 % Description:
 % This demo script produces the results that are depicted in Fig. 8 of the
@@ -46,7 +46,7 @@ Tm = zeros(1,length(tfd));
 Ts = zeros(1,length(tfd));
 for i = 1:length(tfd)
     idx = tfd{i};
-    load(['Data\Computation time\comtime_' idx '.mat']);
+    load(['Data/Computation time/comtime_' idx '.mat']);
     Tm(i) = mean(T(:));
     Ts(i) = std(T(:));
 end

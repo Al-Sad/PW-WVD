@@ -25,7 +25,7 @@
 % Spline Wigner-Ville Distribution for TFD Performance Evaluation and
 % Comparison", IEEE Transactions on Signal Processing, 2021.
 %
-% Last Modification: 12-March-2021
+% Last Modification: 21-May-2021
 %
 % Description:
 % This main script decomposes the database signals using the matching
@@ -39,7 +39,7 @@ clear; close all; clc;
 addpath(genpath('Functions'));
 
 %% Loading database
-load('Data\Database\pw_wvd_database.mat','z','fs','N','K');
+load('Data/Database/pw_wvd_database.mat','z','fs','N','K');
 
 %% Generate chirplet dictionary
 dict = chirplet_dictionary(N,fs);
@@ -51,4 +51,4 @@ for k = 1:K
     disp(100*k/K)
     Atoms{k} = mp_atoms(z{k},dict,ep);
 end
-save('Data\MP\MP_atoms.mat','Atoms');
+save('Data/MP/MP_atoms.mat','Atoms');

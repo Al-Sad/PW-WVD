@@ -25,7 +25,7 @@
 % Spline Wigner-Ville Distribution for TFD Performance Evaluation and
 % Comparison", IEEE Transactions on Signal Processing, 2021.
 %
-% Last Modification: 12-March-2021
+% Last Modification: 21-May-2021
 %
 % Description:
 % This demo script produces the results that are depicted in Fig. 3 of the

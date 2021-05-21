@@ -25,7 +25,7 @@
 % Spline Wigner-Ville Distribution for TFD Performance Evaluation and
 % Comparison", IEEE Transactions on Signal Processing, 2021.
 %
-% Last Modification: 12-March-2021
+% Last Modification: 21-May-2021
 %
 % Description:
 % This demo script produces the results that are depicted in Fig. 7 and
@@ -41,7 +41,7 @@ clear; close all; clc;
 addpath(genpath('Functions'));
 
 %% Loading database information
-load('Data\Database\pw_wvd_database.mat','S','PR','K');
+load('Data/Database/pw_wvd_database.mat','S','PR','K');
 
 %% Main
 tfd = {'pwvd','spwvd','ed','bjd','bd','mbd','embd','ckd','rgd','mdd','dgf','mpd'};
@@ -50,7 +50,7 @@ Perf_r = zeros(K,length(tfd));
 Perf_m = zeros(K,length(tfd));
 for i = 1:length(tfd)
     idx = tfd{i};
-    load(['Data\Evaluation\perf_' idx '.mat']);
+    load(['Data/Evaluation/perf_' idx '.mat']);
     Perf_a(:,i) = Pa;
     Perf_r(:,i) = Pr;
     Perf_m(:,i) = (Pa + Pr)./2;

@@ -25,7 +25,7 @@
 % Spline Wigner-Ville Distribution for TFD Performance Evaluation and
 % Comparison", IEEE Transactions on Signal Processing, 2021.
 %
-% Last Modification: 12-March-2021
+% Last Modification: 21-May-2021
 %
 % Description:
 % This main script evaluates each optimized TFD using the proposed accuracy
@@ -39,7 +39,7 @@ clear; close all; clc;
 addpath(genpath('Functions'));
 
 %% Loading database
-load('Data\Database\pw_wvd_database.mat','z','N','K','IF','IP','IA','Wp','fs');
+load('Data/Database/pw_wvd_database.mat','z','N','K','IF','IP','IA','Wp','fs');
 
 %% Compute the PW-WVD of each signal z
 Lz = cell(1,K);
@@ -56,18 +56,18 @@ for i = 1:length(tfd)
     Pa = zeros(1,K);
     Pr = zeros(1,K);
     if(~strcmp(idx,'mpd'))
-        load(['Data\Optimization\opt_' idx '.mat']);
+        load(['Data/Optimization/opt_' idx '.mat']);
         for k = 1:K
             disp(k/K*100)
             [Pa(k), Pr(k)] = tfd_perf(z{k},Lz{k},idx,param{k,:});
         end
     else
-        load('Data\MP\MP_atoms.mat');
+        load('Data/MP/MP_atoms.mat');
         for k = 1:K
             disp(k/K*100)
             TFD = mpd(Atoms{k});
             [Pa(k), Pr(k)] = tfd_perf(z{k},Lz{k},idx,TFD);
         end
     end
-    save(['Data\Evaluation\perf_' idx '.mat'],'Pa','Pr');
+    save(['Data/Evaluation/perf_' idx '.mat'],'Pa','Pr');
 end

@@ -25,7 +25,7 @@
 % Spline Wigner-Ville Distribution for TFD Performance Evaluation and
 % Comparison", IEEE Transactions on Signal Processing, 2021.
 %
-% Last Modification: 12-March-2021
+% Last Modification: 21-May-2021
 %
 % Description:
 % This main script optimizes each quadratic TFD using the Bayesian
@@ -46,7 +46,7 @@ Use_par = 1;
 disp_re = 0;
 
 %% Loading database
-load('Data\Database\pw_wvd_database.mat','z','N','K','IF','IP','IA','Wp','fs');
+load('Data/Database/pw_wvd_database.mat','z','N','K','IF','IP','IA','Wp','fs');
 
 %% Compute the PW-WVD and WVD of each signal z
 Lz = cell(1,K);
@@ -73,12 +73,12 @@ for i = 1:length(tfd)
             'IsObjectiveDeterministic',0);
         param(k,:) = tfd_param(idx,bayes_out.XAtMinObjective,w);
     end
-    save(['Data\Optimization\opt_' idx '.mat'],'param');
+    save(['Data/Optimization/opt_' idx '.mat'],'param');
 end
 
 %% Optimize SPWVD using PWVD optimal parameters as initial guesses
 idx = 'spwvd';
-load('Data\Optimization\opt_pwvd.mat');
+load('Data/Optimization/opt_pwvd.mat');
 param_pwvd = param; clear param;
 [opt_var,w] = prepare_opt_var(idx,N);
 I = zeros(K,2);
@@ -98,4 +98,4 @@ for k = 1:K
         'IsObjectiveDeterministic',0,'InitialX',Initial_x(k,:));
     param(k,:) = tfd_param(idx,bayes_out.XAtMinObjective,w);
 end
-save(['Data\Optimization\opt_' idx '.mat'],'param');
+save(['Data/Optimization/opt_' idx '.mat'],'param');
