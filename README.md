@@ -4,7 +4,7 @@ The material in this repository is provided to supplement the following paper:
 
 M. Al-Sa'd, B. Boashash, and M. Gabbouj, “Design of an Optimal Piece-Wise Spline
 Wigner-Ville Distribution for TFD Performance Evaluation and Comparison”, *IEEE
-Transactions on Signal Processing*, (2021), doi: 10.1109/TSP.2021.3089291.
+Transactions on Signal Processing*, (2021), <https://doi.org/10.1109/TSP.2021.3089291>.
 
 The MATLAB scripts, functions, and datasets listed in this repository are used
 to produce results, and supporting figures illustrated in the paper.
